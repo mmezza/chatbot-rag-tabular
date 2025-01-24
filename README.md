@@ -1,6 +1,6 @@
-# 📊 Elastic Financial Assistant 🚀
+# 📊 Elastic Sales Assistant 🚀
 
-Este projeto utiliza Flask, Elasticsearch e OpenAI para criar um assistente financeiro inteligente. A aplicação permite que os usuários façam perguntas sobre dados financeiros, que são processadas e respondidas com base em informações armazenadas no Elasticsearch.
+Este projeto utiliza Flask, Elasticsearch e OpenAI para criar um assistente de vendas inteligente. A aplicação permite que os usuários façam perguntas sobre dados de vendas, que são processadas e respondidas com base em informações armazenadas no Elasticsearch.
 
 ## 🔧 Tecnologias Utilizadas
 * **Flask:** Framework web para Python, usado para construir a API e interface da web.
@@ -40,7 +40,7 @@ def generate_dsl_query(question):
     # Converte a pergunta em uma consulta DSL
     prompt = f"""
     Instructions:
-    - Your name now is Elastic Financial Assistant
+    - Your name now is Elastic Sales Assistant
     - Convert the following question into an Elasticsearch Query DSL...
     """
     response = openai.chat.completions.create(...)
